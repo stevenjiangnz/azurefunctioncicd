@@ -30,7 +30,7 @@ namespace ScreenFuncProj
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req)
         {
-            _logger.LogInformation("C# HTTP trigger function processed a request.");
+            _logger.LogInformation("C# HTTP trigger function processed a request jjjj.");
 
             string name = req.Query["name"];
 
