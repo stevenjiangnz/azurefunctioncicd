@@ -1,0 +1,82 @@
+# .NET Core and Visual Studio files
+.vs/
+bin/
+obj/
+
+# NuGet packages
+*.nuget.cache
+*.dll
+*.exe
+*.pdb
+*.userprefs
+*.bak
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+AnyCPU/
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.pubxml
+*.publishproj
+*.swp
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Resharper specific
+*_ReSharper.*
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# GhostDoc plugin setting file
+*.GhostDoc.xml
+
+# Visual Studio code coverage results
+*.coverage
+*.opencover
+*.scoverage
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Oo]bj/
+[Ll]og/
+
+# Razor precompiled views
+*.PrecompiledViews.dll
+
+# Azure Function specific
+# Azure Functions generated artifacts
+bin/
+obj/
+
+# Local development files
+local.settings.json
+
+# Visual Studio files
+*.csproj.user
+*.user
+*.vscode/
+.vs/
+
+# Publish profiles
+*.PublishSettings
+
+# External tools
+Tools/
+
+# Unit test output
+TestResults/
