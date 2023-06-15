@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
@@ -7,6 +8,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
@@ -30,7 +32,9 @@ namespace ScreenFuncProj
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req)
         {
-            _logger.LogInformation("C# HTTP trigger function processed a request jjjj.");
+            var testValue = Environment.GetEnvironmentVariable("MySetting");
+
+            _logger.LogInformation("C# HTTP trigger function processed a request jjjj. " + testValue);
 
             string name = req.Query["name"];
 
